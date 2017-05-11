@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+head{
+	font-size: 12px;
+	color:gray;
+	line-height: 2em;
+}
+a{
+	color: #727272;
+	font-weight: 900;
+}
+#caidan{
+	font-size: 14px;
+	color: #b9f605;
+	font-weight: 900;
+}
+#caidan a{
+	color: white;
+}
+#caidan a.hover{
+	color: #b9f605;
+	text-decoration: none;
+}
+#teshu{
+	color: #fdb306;
+}
