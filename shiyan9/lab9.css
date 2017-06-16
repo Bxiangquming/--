@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-size: 12px;
+	color: #522a06;
+	padding: 0px;
+	font-family: 宋体;
+	border: none;
+}
+ul{
+	list-style-type: none;
+}
+a:link {
+ text-decoration: none;
+	color: #522a06;
+}
+a:visited {
+ text-decoration: none;
+}
+a:hover {
+ text-decoration:underline;
+}
+a:active {
+ text-decoration: none;
+}
+body{
+	background-image: url(images/bodybg.gif);
+}
+#header{
+	background-image: url(images/bg.gif);
+	height: 205px;
+	background-position:center top; 
+	background-size: cover;
+}
+#banner{
+	height: 120px;
+	width: 1000px;
+    padding: 38px 0 0 25px;
+}
+#nav{
+	height: 40px;
+	background-image: url(images/nav.jpg);
+}
+.nav_body{
+	width: 1000px;
+	text-align: center;
+}
+#nav{
+	height: 40px;
+	font-weight: 900;
+	color: #fff;
+}
+.nav_content a{
+	color: #fff;
+}
+.nav_content{
+	color: #fff;
+	float: left;
+	padding-left: 60px;
+}
+#nav a{
+	line-height: 40px;
+}
+#nav a:hover{
+	color: #f9f603;
+	text-decoration-line: none;
+	
+}
+.shouye{
+	color: #f9f603;
+}
+.text{
+	width: 140px;
+	height: 19px;
+	background-color: #f8f5ee;
+}
+.button{
+	width: 44px;
+	height: 21px;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #f8f5ee;
+}
+.nav_search{
+	padding-top: 10px;
+}
+#content{
+	width: 1524px;
+	text-align:center;
+	float: none;
+}
+#content_top{
+	overflow: hidden;
+}
+#content_bottom_left{
+	width: 800px;
+	float: left;
+}
+#content_bottom_right{
+	width: 280px;
+	margin-top: 20px;
+	float: right;
+}
+#news_pic{
+	width: 324px;
+	height: 243px;
+	background-image: url(images/news_bg.png);
+	float: left;
+	padding-top: 10px;
+}
+#news_pic img{
+	height: 300px;
+	height: 200px;
+}
+.desc{
+	height: 22px;
+	width: 300px;
+	text-align: center;
+}
+
+#news_list{
+	width: 330px;
+	margin-left: 38px;
+	float: left;
+	list-style-type: circle;
+}
+#news_announce{
+	width: 277px;
+	margin-top: 20px;
+	float: left;
+}
+#neirong{
+	width: 285px;
+	height: 210px;
+	background-image: url(images/board_bg.png);
+}
+.academic{
+	width: 340px;
+	margin-left: 38px;
+	float: left;
+	list-style-type: circle;
+}
+.book_news{
+	width: 340px;
+	margin-left: 25px;
+	float: right;
+	list-style-type: circle;
+}
+.fengcai{
+	margin-top: 50px;
+	width: 1000px;
+	clear:both;
+	background-image: url(images/fengcai.png);
+	background-repeat:no-repeat;
+}
+.fengcai img{
+	margin-top: 50px;
+	height: 100px;
+	padding: 20px;
+	background-image: url(images/fengcai_bg2.png);
+	position: relative;
+    right:140px;
+}
+#content_bottom_right{
+	width: 280px;
+	height: 450px;
+}
+.show{
+	background-image: url(images/show_bg.png);
+	float: left;;
+}
+.show b{
+	color: red;
+}
+.show img{
+	padding: 20px
+}
+#content_bottom_right{
+	position: relative;
+	right:440px
+}
+#footer{
+	padding-top:600px;
+	align-content: center;
+	text-align: center;
+}
+#footer{
+	position: relative;
+	right: 300px;
+	bottom: 100px;
+}
