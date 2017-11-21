@@ -161,16 +161,16 @@
     <script type="text/javascript">
     	window.onload = function(){
 			var liNodes = document.getElementsByClassName("e1");
-			console.log(liNodes);
-			for (var i=0; i<liNodes.length;i++)
-			{
-				liNodes[i].onmouseover = function(){
-					this.children[4].className = "asd";
-				}
-				liNodes[3].children[i].onmouseout = function(){
-					this.className = "qwe";
-				}
-			}
-		}
+            console.log(liNodes.length);
+			for (var i=0; i<liNodes.length; i++)
+            {
+                liNodes[i].onmouseover = function(){
+                    this.children[4].className = "asd";
+                }
+                liNodes[i].onmouseout = function(){
+                    this.children[4].className = "qwe";
+                }
+            }
+        }
     </script>
 </html>
