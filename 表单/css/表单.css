@@ -1,0 +1,19 @@
+
+#box1{
+	width:500px;
+	height:600px;
+	margin:0px auto;
+}
+span{
+	color:red;
+}
+legend{
+	color:red;
+}
+fieldset{
+	margin-bottom: 30px;
+	}
+button{
+	width:55px;
+	height:30px;
+}

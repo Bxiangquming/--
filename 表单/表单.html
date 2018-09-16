@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>课后作业</title>
+		<link rel="stylesheet" href="css/表单.css" />
+		<script type="text/javascript" src="js/表单.js" ></script>
+	</head>
+	<body>
+		<div id="box1">
+			<h1>请填写个人信息</h1>
+			<div id="inside1">
+				<fieldset>
+					<legend>自我介绍</legend>
+					<div>
+						姓名
+						<input id="na" type="text" required="required" placeholder="请输入姓名" />
+						<span>*</span>
+					</div>
+					<div>
+						年龄<input type="number" max="200" min="0" step="1" />
+					</div>
+				</fieldset>
+			</div>
+			<div id="inside2">
+				<fieldset>
+					<legend>你想在哪里收到邮件？</legend>
+					邮箱<input id="address" type="text" list="email" required="true" placeholder="请输入邮箱地址" autocomplete="on" results/>
+					<span>*</span>
+					<datalist id="email">
+						<option>@qq.com</option>
+						<option>@163.com</option>
+						<option>@gmail.com</option>
+						<option>@yahoo.com</option>
+						<option>@126.com</option>
+					</datalist>
+				</fieldset>
+			</div>
+			<div id="inside3">
+				<fieldset>
+					<legend>收入情况</legend>
+					<div>
+						月收入<input type="text" list="shouru" value="20k+" />
+						<datalist id="shouru">
+							<option>5k~10k</option>
+							<option>10k~15k</option>
+							<option>15k~20k</option>
+							<option>20k+</option>
+						</datalist>
+					</div>
+					<div>
+						银行卡<input type="text" />
+						有效期<input type="date"/>
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<fieldset>
+					<legend>选取提交文件</legend>
+					文件<input type="file" />
+				</fieldset>
+			</div>
+			<button>提交</button>
+		</div>
+	</body>
+</html>
