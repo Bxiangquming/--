@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>更换背景</title>
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			.a1{
+				margin:0 auto;
+				width:500px;
+				height:200px
+			}
+			fieldset{
+				margin:0 auto;
+				width:450px;
+				height:200px
+			}
+			legend{
+				margin-left:25px;
+				color:red;
+			}
+			.b1{
+				width:430px;
+				height:50px;
+				border:solid 1px black;
+				margin:30px auto;
+			}
+			.b1 div{
+				width:25px;
+				height:25px;
+				border:solid 1px black;
+				float:left;
+				margin-left:30px;
+				margin-top:12px;
+			}
+			.b2{
+				width:400px;
+				margin: auto;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var box1=document.getElementsByClassName("b1")[0].children;
+				var box2=document.getElementsByClassName("b2")[0];
+				if(localStorage.getItem("blocor")){
+					box2.style.backgroundColor="#00BFFF";
+				}
+				else{
+					box2.style.backgroundColor=localStorage["bcolor"];
+				}
+				for(var i=0;i<box1.length;i++){
+					(function(i){
+					box1[i].onclick=function(){
+						if(window.localStorage){
+						localStorage["bcolor"]=box1[i].style.backgroundColor;
+						box2.style.backgroundColor=localStorage["bcolor"];
+						console.log(localStorage["bcolor"]);
+						box1[i].style.marginTop="5px";
+						}
+					}
+				})(i);
+				}
+				for(var i=0;i<box1.length;i++){
+					(function(i){
+					box1[i].onmouseover=function(){
+						if(window.localStorage){
+						box1[i].style.marginTop="5px";
+						}
+					}
+					box1[i].onmouseout=function(){
+						if(window.localStorage){
+						box1[i].style.marginTop="12px";
+						}
+					}
+				})(i);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="a1">
+			<fieldset>
+				<legend>页面换肤</legend>
+				<div class="b1">
+					<div style="background-color: gray;"></div>
+					<div style="background-color: purple;"></div>
+					<div style="background-color: red;"></div>
+					<div style="background-color: blue;"></div>
+					<div style="background-color: orangered;"></div>
+					<div style="background-color: cadetblue;"></div>
+				</div>
+				<div class="b2">
+					<p>LocalStorage将数据保存在客户端本地的硬件设备中，即使浏览器被关闭了，
+						该数据仍然存在，下次打开浏览器访问网站时仍然可以继续使用</p>
+				</div>
+			</fieldset>
+		</div>
+	</body>
+</html>
