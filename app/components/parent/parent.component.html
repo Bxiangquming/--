@@ -1,0 +1,8 @@
+<p>
+  这是父组件
+</p>
+<app-child (txt1)="fun1($event)">
+  <h3>这是h3标签</h3>
+</app-child>
+<app-child1 [arr1]="data1" [arr2]="data2" (delete1)="del1($event)"
+ (delete2)="del2($event)" (check1)="fun3($event)" (check2)="fun4($event)"></app-child1>

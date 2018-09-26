@@ -1,0 +1,4 @@
+<ng-content ></ng-content>
+<h1>ToDoList:</h1>
+<h1 [innerHTML]="txt"></h1>
+<input type="text" (keydown)="fun2($event,txt)" [(ngModel)]="txt"/>
