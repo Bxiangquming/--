@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>上传头像</title>
+		<script>
+			window.onload=function(){
+				var box1=document.getElementById("box1");
+				box1.ondragover=function(ev){//阻止默认执行
+					ev.preventDefault();
+				}
+				box1.ondrop=function(ev){//拖放完成之后响应事件
+					ev.preventDefault();
+					if(!window.FileReader){//判断浏览器是否支持FileReader对象
+						alert("你的浏览器不支持FileReader对象接口");
+					}
+					else{
+						var reader=new FileReader();
+						file=ev.dataTransfer.files;//获取拖放的文件，类型是一个数组
+					}
+					var img=document.createElement("img");//添加一个img标签
+					reader.readAsDataURL(file[0]);
+					reader.onload=function(){
+						img.src=this.result;
+						box1.appendChild(img);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div style="margin:auto 0;">
+			上传头像
+			<div id="box1" style="width:200px;height: 200px;border: solid 1px black; text-align: center;">
+			</div>
+		</div>
+	</body>
+</html>
