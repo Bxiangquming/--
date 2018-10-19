@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>钟表</title>
+		<style>
+			canvas {
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="cav1" width="600" height="600">
+			<script>
+				var canvas=document.getElementById("cav1");
+				var context=canvas.getContext("2d");
+
+function f(){
+	context.clearRect(0,0,600,600);
+	context.save();
+	context.beginPath();
+	context.lineWidth = 15;
+	context.strokeStyle = "#beff59"
+	context.arc(250, 250, 210, 0, 2 * Math.PI);
+	context.stroke();
+	context.closePath();
+
+	context.beginPath();
+	context.save();
+	context.translate(250, 250);
+	for(var i = 0; i < 12; i++) {
+		context.fillStyle = "red";
+		context.fillRect(-4, -190, 8, 25);
+		context.rotate(30 / 180 * Math.PI);
+	}
+	context.restore();
+	context.closePath();
+
+	context.beginPath();
+	context.save();
+	context.translate(250, 250);
+	for(var i = 0; i < 12; i++) {
+		for(var j = 0; j < 4; j++) {
+			context.rotate(6 / 180 * Math.PI);
+			context.fillStyle = "black";
+			context.fillRect(-3, -190, 6, 20);
+		}
+		context.rotate(6 / 180 * Math.PI);
+	}
+	context.restore();
+	context.closePath();
+
+	context.beginPath();
+	context.save();
+	context.translate(250, 250);
+	for(var i = 12; i > 0; i--) {
+		context.textAlign = "center";
+		context.textBaseline = "middle";
+		context.fillStyle = "black";
+		var a = 2 * Math.PI / 12 * (12 - i) + 0.5 * Math.PI;
+		var x = Math.cos(a) * 155;
+		var y = -Math.sin(a) * 155;
+		if(i == 12)
+			context.fillText(i, x, y);
+		else
+			context.fillText(i, x, y);
+
+	}
+	context.restore();
+	context.closePath();
+}
+
+function createH(h, m, s) {
+	context.save();
+	context.beginPath();
+	context.translate(250, 250);
+	var h_a = 2 * Math.PI/12*h+2*Math.PI/(12*60)*m+2*Math.PI/(12*60*60)*s;
+					context.rotate(h_a);
+					context.lineWidth=10;
+					context.strokeStyle="#800080";
+					context.lineCap="butt";
+					context.moveTo(0,5);
+					context.lineTo(0,-110)
+					context.stroke();
+					context.restore();
+				}
+				
+				function createM(m,s){
+					context.save();
+					context.beginPath();
+					context.translate(250,250);
+					var m_a=2*Math.PI/(60)*m+2*Math.PI/(60*60)*s;
+					context.rotate(m_a);
+					context.lineWidth=5;
+					context.strokeStyle="#ffc0cb";
+					context.lineCap="butt";
+					context.moveTo(0,10);
+					context.lineTo(0,-150)
+					context.stroke();
+					context.restore();
+				}
+				
+				function createS(s){
+					context.save();
+					context.beginPath();
+					context.translate(255,255);
+					var s_a=2*Math.PI/(60)*s;
+					context.rotate(s_a);
+					context.lineWidth=3;
+					context.strokeStyle="#red";
+					context.lineCap="butt";
+					context.moveTo(0,15);
+					context.lineTo(0,-155)
+//					context.beginPath();
+//					context.fillStyle="red";
+//					context.arc(0,-120,10,0,2*Math.PI);
+//					context.fill();
+//					context.closePath();
+//					context.beginPath();
+//					context.fillStyle="black";
+//					context.arc(0,-120,10,0,2*Math.PI)
+//					context.fill();
+//					context.closePath();
+					context.stroke();
+					context.restore();
+					context.closePath();
+				}
+				
+				function origin(){
+					context.beginPath();
+					context.fillStyle="black";
+					context.arc(255,255,5,0,2*Math.PI);
+					context.fill();
+					context.closePath();
+				}
+				
+				function Update(){
+					var now=new Date();
+					var h=now.getHours();
+					var m=now.getMinutes();
+					var s=now.getSeconds();
+					f();
+					createH(h,m,s);
+					createM(m,s);
+					createS(s);
+					origin();
+					context.restore();
+				}
+				Update();
+				setInterval(Update,1000);
+			</script>
+		</canvas>
+	</body>
+
+</html>
