@@ -1,0 +1,88 @@
+.h1{
+    width:1030px;
+    height:460px;
+    margin:25px auto;
+}
+.left{
+    width:185px;
+    height:700px;
+    float: left;
+}
+.h4{
+    width:185px;
+    height:250px;
+}
+.left img{
+    display: block;
+    width:170px;
+    height:170px
+}
+.left p{
+    display: block;
+    margin:5px 50px;
+}
+.left h3{
+    float:left;
+    margin:3px 32px;
+}
+.left span{
+    
+    width:85px;
+    float: left;
+    text-align: center;
+}
+.h2{
+    width:170px;
+    height:185px;
+}
+.h2 li{
+    display: block;
+    margin-top:5px;
+    cursor: pointer;
+    width:170px;
+    height: 23px;
+   
+}
+.h2 li:hover{
+    display: block;
+    margin-top:5px;
+    cursor: pointer;
+    width:170px;
+    color:#ff6c4f;
+    background-color: #ff6c4fa1;
+}
+.right{
+    background-color: white;
+    border:5px solid #fbfbfb;
+    width:795px;
+    height:380px;
+    float: left;
+    margin-left: 20px;
+}
+.h3{
+    margin:0 auto;
+    line-height: 46px;
+    width:770px;
+    height:46px;
+    border-bottom: 2px solid #efefef;
+}
+.h3 span{
+    display:block;
+    font-size: 14px;
+    width:100px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+}
+.h3 span:hover{
+    display:block;
+    width:100px;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+    color:#ff6c4f
+}
+.h3 input{
+    height:20px;
+    margin-left:240px;
+}

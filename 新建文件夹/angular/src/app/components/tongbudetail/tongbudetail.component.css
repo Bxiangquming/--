@@ -1,0 +1,44 @@
+.t1{
+    width:1030px;
+    height:105px;
+    margin:0 auto;
+    background-color: #fafbfd;
+
+}
+h3{
+    
+    height:20px;
+    float:left;
+    margin-top:25px;
+    margin-left:25px;
+}
+.inside1{
+    width:65px;
+    height:20px;
+    float: left;
+    margin-left:10px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #27b934;
+    color:white;
+    margin-top:28px;
+}
+.inside3{
+    position: relative;
+    top:-30px;
+    width:450px;
+    height:30px;
+    margin-top:25px;
+}
+.inside3 li{
+    font-size:16px;
+    float: left;
+    width:100px;
+    height:35px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.inside3 li:hover{
+    background-color:white;
+}

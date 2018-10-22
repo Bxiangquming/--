@@ -1,0 +1,13 @@
+<div class="c1">
+    <ul>
+     <li *ngFor="let video of videoarr">
+        <a [routerLink]="['/course',video.id]">
+          <img src={{video.images}} >
+          <h4>{{video.Name}}</h4>
+          <p>{{video.jianjie}}</p>
+          <span id="s1">课时&nbsp;&nbsp;{{video.task}}</span>
+          <span id="s2">人数&nbsp;&nbsp;{{video.person}}</span>
+        </a>
+     </li>
+    </ul>
+</div>

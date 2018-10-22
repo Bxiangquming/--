@@ -1,0 +1,42 @@
+.c1{
+    width:1030px;
+    margin:25px auto;
+}
+.c1 img{
+    width:247px;
+    height:135px;
+}
+.c1 li{
+    width:247px;
+    height:290px;
+    border:1px solid #e8e8e8;
+    float: left;
+    margin-left:3px;
+    margin-top:10px;
+}
+.c1 h4{
+    width:227px;
+    height:30px;
+    margin-left:10px;
+    margin-top:20px;
+}
+.c1 p{
+    color:#e8e8e8;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:12px;
+    font-size:12px;
+    
+}
+.c1 span{
+    display: block;
+    color:#e8e8e8;
+    float: left;
+    margin-top:10px;
+}
+#s1{
+    margin-left:10px;
+}
+#s2{
+    margin-left:80px;
+}

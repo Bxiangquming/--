@@ -1,0 +1,33 @@
+.container{
+    width:1000px;
+    margin:0 auto;
+}
+.container li{
+    width:245px;
+    height:240px;
+    border: 1px solid #f4f4f4;
+    float: left;
+    margin-right:3px;
+    margin-top:20px;
+}
+.container li img{
+    width:245px;
+    height:120px;
+}
+p{
+    margin-top:20px;
+    margin-left:5px;
+    color:black;
+}
+.d1{
+    margin-top: 45px;
+    margin-left:5px;
+}
+.d1 button{
+    width:60px;
+    height:25px;
+    border:0px;
+    float: right;
+    color:white;
+    background-color: #ec6d36;
+}
